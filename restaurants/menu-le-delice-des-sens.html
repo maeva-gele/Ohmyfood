@@ -5,22 +5,25 @@
     <meta charset="utf-8">
     <title>Ohmyfood</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/desktop.css">
+    <link rel="stylesheet" href="../assets/CSS/style.css">
+    <link rel="stylesheet" href="../assets/CSS/desktop.css">
 </head>
 
 <body>
 
-<header>
-    <a href="index.html" class="header__logo">
-        <img src="./images/logo/ohmyfood.png" alt="Logo Ohmyfood">
-    </a>
-    <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant La Palette du goût" class="header__img">
+<header class="header">
+    <div class="header__menu">
+        <!-- BOUTON RETOUR ACCUEIL -->
+        <a href="../index.html"><i class="fas fa-arrow-left header__menu__arrow"></i></a>
+        <!-- LOGO -->
+        <img src="../assets/logo/ohmyfood.png" alt="Logo Ohmyfood" class="header__menu__logo">
+    </div>
+    <img src="../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant La Palette du goût" class="header__img">
 </header>
 
 <main class="menu">
     <div class="menu__title">
-        <h1>La palette du goût</h1>
+        <h1>Le délice des sens</h1>
         <div class="like">
             <i class="fa-regular fa-heart"></i>
             <i class="fa-solid fa-heart"></i>
@@ -28,15 +31,15 @@
     </div>
     
 <!-- ENTREES -->
-    <div class="menu__carte">
+    <div class="menu__carte animation1">
         <h2>Entrées</h2>
         <div class="menu__carte__line"></div>
         <!-- ENTREE 1 -->
-        <article class="menu__carte__card">
+        <article class="menu__carte__card animation1">
             <div class="menu__carte__card__content">
                 <div class="menu__carte__card__content__title">
-                    <h3>Fricassé d'escargots</h3>
-                    <p>Au piment d'Espelette </p>
+                    <h3>Tartare de thon</h3>
+                    <p>Assaisonné au yuzu</p>
                 </div>
                 <p class="menu__carte__card__content__price">25€</p>
             </div>
@@ -45,11 +48,11 @@
             </div>
         </article>
         <!-- ENTREE 2 -->
-        <article class="menu__carte__card">
+        <article class="menu__carte__card animation2">
             <div class="menu__carte__card__content">
                 <div class="menu__carte__card__content__title">
-                    <h3>Foie gras de canard mi-cuit</h3>
-                    <p>Et ses copraux de truffe noire</p>
+                    <h3>Bouchée de hormard croustillant</h3>
+                    <p>Et sa farandole de petits légumes</p>
                 </div>
                 <p class="menu__carte__card__content__price">35€</p>
             </div>
@@ -58,13 +61,13 @@
             </div>
         </article>
         <!-- ENTREE 3 -->
-        <article class="menu__carte__card">
+        <article class="menu__carte__card animation3">
             <div class="menu__carte__card__content">
                 <div class="menu__carte__card__content__title">
-                    <h3>Oeuf au plat </h3>
-                    <p>Assaisonné à la truffe sur lit de caviar</p>
+                    <h3>Poulet rôti aux herbes de provence</h3>
+                    <p>Et sa crème de truffe</p>
                 </div>
-                <p class="menu__carte__card__content__price">20€</p>
+                <p class="menu__carte__card__content__price">40€</p>
             </div>
             <div class="menu__carte__card__icon">
                 <i class="fa-solid fa-check"></i>
@@ -73,15 +76,15 @@
     </div>
 
 <!-- PLATS -->
-    <div class="menu__carte">
+    <div class="menu__carte animation2">
         <h2>Plats</h2>
         <div class="menu__carte__line"></div>
         <!-- PLAT 1 -->
-        <article class="menu__carte__card">
+        <article class="menu__carte__card animation1">
             <div class="menu__carte__card__content">
                 <div class="menu__carte__card__content__title">
-                    <h3>Filet de boeuf aux herbes</h3>
-                    <p>Accompagné de sa ribanbelle de légumes</p>
+                    <h3>Poulet rôti aux herbes de provence</h3>
+                    <p>Et sa crème de truffe</p>
                 </div>
                 <p class="menu__carte__card__content__price">40€</p>
             </div>
@@ -90,11 +93,11 @@
             </div>
         </article>
         <!-- PLAT 2 -->
-        <article class="menu__carte__card">
+        <article class="menu__carte__card animation2">
             <div class="menu__carte__card__content">
                 <div class="menu__carte__card__content__title">
-                    <h3>Parmentier de queue de boeuf</h3>
-                    <p>À la truffe noire et sa purée de panais</p>
+                    <h3>Langouste rôtie</h3>
+                    <p>Et ses légumes de saison</p>
                 </div>
                 <p class="menu__carte__card__content__price">35€</p>
             </div>
@@ -103,11 +106,11 @@
             </div>
         </article>
         <!-- PLAT 3 -->
-        <article class="menu__carte__card">
+        <article class="menu__carte__card animation3">
             <div class="menu__carte__card__content">
                 <div class="menu__carte__card__content__title">
-                    <h3>Filet de turbot</h3>
-                    <p>Aux agrumes</p>
+                    <h3>Côte de boeuf Angus </h3>
+                    <p>Et sa purée de panais</p>
                 </div>
                 <p class="menu__carte__card__content__price">44€</p>
             </div>
@@ -118,41 +121,41 @@
     </div>
 
 <!-- DESSERTS -->
-    <div class="menu__carte">
+    <div class="menu__carte animation3">
         <h2>Desserts</h2>
         <div class="menu__carte__line"></div>
         <!-- DESSERT 1 -->
-        <article class="menu__carte__card">
+        <article class="menu__carte__card animation1">
             <div class="menu__carte__card__content">
                 <div class="menu__carte__card__content__title">
-                    <h3>Filet de boeuf aux herbes</h3>
-                    <p>Accompagné de sa ribanbelle de légumes</p>
+                    <h3>Farandoles de desserts</h3>
+                    <p>Du chef</p>
                 </div>
-                <p class="menu__carte__card__content__price">40€</p>
+                <p class="menu__carte__card__content__price">18€</p>
             </div>
             <div class="menu__carte__card__icon">
                 <i class="fa-solid fa-check"></i>
             </div>
         </article>
         <!-- DESSERT 2 -->
-        <article class="menu__carte__card">
+        <article class="menu__carte__card animation2">
             <div class="menu__carte__card__content">
                 <div class="menu__carte__card__content__title">
-                    <h3>Parmentier de queue de boeuf</h3>
-                    <p>À la truffe noire et sa purée de panais</p>
+                    <h3>Crème brûlée</h3>
+                    <p>Revisitée</p>
                 </div>
-                <p class="menu__carte__card__content__price">35€</p>
+                <p class="menu__carte__card__content__price">22€</p>
             </div>
             <div class="menu__carte__card__icon">
                 <i class="fa-solid fa-check"></i>
             </div>
         </article>
         <!-- DESSERT 3 -->
-        <article class="menu__carte__card">
+        <article class="menu__carte__card animation3">
             <div class="menu__carte__card__content">
                 <div class="menu__carte__card__content__title">
-                    <h3>Filet de turbot</h3>
-                    <p>Aux agrumes</p>
+                    <h3>Tiramisu</h3>
+                    <p>À la noisette</p>
                 </div>
                 <p class="menu__carte__card__content__price">44€</p>
             </div>
@@ -161,7 +164,7 @@
             </div>
         </article>
     </div>
-    <a href="#" class="menu__button">Commander</a>
+    <a class="button shadow" href="#">Commander</a>
 </main>
 
 
@@ -170,9 +173,9 @@
         <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
         <a href="#"><i class="fas fa-handshake-angle"></i>Devenir partenaire</a>
         <a href="#">Mentions légales</a>
-        <a href="#">Contact</a>
+        <a href="mailto:contact@ohmyfood.com">Contact</a>
     </div>
-    <a href="index.html"><img src="./images/logo/ohmyfood_blanc.svg" alt="Logo Ohmyfood" class="footer__logo"></a>
+    <a href="../index.html"><img src="../assets/logo/ohmyfood_blanc.svg" alt="Logo Ohmyfood" class="footer__logo"></a>
 </footer>
 
 </body>
