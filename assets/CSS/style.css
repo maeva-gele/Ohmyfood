@@ -137,6 +137,14 @@ img {
   opacity: 0.75;
 }
 
+.animation {
+  animation: slide-in-left 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.animation0 {
+  animation: slide-in-left 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.05s both;
+}
+
 .animation1 {
   animation: slide-in-left 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
 }
@@ -242,7 +250,7 @@ main .chargement {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  animation: slide-out-top 0.25s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1.5s both;
+  animation: slide-out-top 0.25s cubic-bezier(0.55, 0.085, 0.68, 0.53) 2s both;
 }
 main .chargement p {
   font-weight: 900;
